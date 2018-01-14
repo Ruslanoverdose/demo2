@@ -1,0 +1,21 @@
+﻿<Window x:Name="window4" x:Class="Семестровая.Window4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Семестровая"
+        mc:Ignorable="d"
+        Title="Window4" Height="479.323" Width="693.609" Loaded="Window_Loaded" Closing="window4_Closing">
+    <Window.Resources>
+        <CollectionViewSource x:Key="usersViewSource" d:DesignSource="{d:DesignInstance {x:Type local:Users}, CreateList=True}"/>
+    </Window.Resources>
+    <Grid Margin="0,0,0,-2">
+        <Image x:Name="PhotoImage" HorizontalAlignment="Left" Height="292" Margin="10,10,0,0" VerticalAlignment="Top" Width="313"/>
+        <Label x:Name="NameLabel" Content="Имя" HorizontalAlignment="Left" Margin="359,26,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LastNameLab" Content="Фамилия" HorizontalAlignment="Left" Margin="359,57,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="genLab" Content="Пол" HorizontalAlignment="Left" Margin="359,88,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="EmailLab" Content="Email" HorizontalAlignment="Left" Margin="359,119,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Birthlabel" Content="Дата рождения" HorizontalAlignment="Left" Margin="359,150,0,0" VerticalAlignment="Top"/>
+        <Label Content="Описание" HorizontalAlignment="Left" Margin="359,181,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
